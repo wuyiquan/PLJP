@@ -1,16 +1,3 @@
-This is code and data for "Precedent-Enhanced Legal Judgment Prediction with LLM and Domain-Model Collaboration", EMNLP2023.
-
-### ./mycode
-
-- ### usage:
-
-  ```python
-  python llm_api.py --model "gpt-3.5-turbo" --small_model CNN --task penalty --use_split_fact True --dataset "cail18"
-  ```
-
-- Prompts are specified in __./mycode/utils/prompt_gen.py__.
-
-
 ### ./data
 
 - the data directory can be downloaded [here](https://pan.baidu.com/s/1MrJdxvwTOfwhOwANJpTLtQ). Extraction code: vu76.
@@ -49,9 +36,6 @@ This is code and data for "Precedent-Enhanced Legal Judgment Prediction with LLM
 3.  _reorganized fact_ of the given case, _top-k labels_ and _precedents_ are concatenated and fed into LLMs for the final prediction through in-context precedent comprehension. 
 
 - Output of domain models and LLMs are stored in __./data/output__. 
-
-- Evaluation: Codes for metrics are in __./mycode/metrics__. 
-
 
 - Example: 
 1. We have the **_fact description_** of a given case 
